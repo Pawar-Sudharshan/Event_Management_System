@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - College Event Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-light text-dark">
+  <header class="py-3 bg-white border-bottom border-secondary">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <a class="fs-4 fw-bold text-decoration-none text-dark" href="index.html">College Events</a>
+      <nav class="d-flex flex-wrap justify-content-center gap-3" aria-label="Primary navigation">
+        <a class="text-secondary text-decoration-none fs-6" href="index.html">Home</a>
+        <a class="text-secondary text-decoration-none fs-6" href="events.html">Events</a>
+        <a class="text-secondary text-decoration-none fs-6" href="gallery.html">Gallery</a>
+        <a class="text-secondary text-decoration-none fs-6" href="registration.html">Registration</a>
+        <a class="text-secondary text-decoration-none fs-6" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-8">
+            <span class="badge bg-warning text-dark mb-3">FAQ</span>
+            <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+            <p class="lead text-secondary">Find quick answers to common registration and participation questions.</p>
+          </div>
+        </div>
+
+        <div class="alert alert-info rounded-4 shadow-sm" role="alert">
+          <h4 class="alert-heading">Need help?</h4>
+          <p>Read through the FAQ below, then contact the event coordinator if you still have questions.</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                How to register?
+              </button>
+            </h2>
+            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Fill out the registration form with your details, select the event, and submit. You will see a confirmation message once registration is complete.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                Is there a registration fee?
+              </button>
+            </h2>
+            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Most events are free for students, but some special workshops may require a nominal fee. Check event details or contact the coordinator for fee-related information.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                Can I participate in multiple events?
+              </button>
+            </h2>
+            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, students are welcome to register for multiple events as long as the schedules do not conflict. Please check the event schedule before signing up for more than one activity.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 bg-white border-top border-secondary">
+    <div class="container text-center text-secondary small">© 2026 College Event Management System · <a href="faq.html" class="text-decoration-none text-secondary">FAQ</a></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

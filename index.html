@@ -11,13 +11,19 @@
 <body class="bg-light text-dark">
   <header class="py-3 bg-white border-bottom border-secondary">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <a class="fs-4 fw-bold text-decoration-none text-dark" href="#home">College Events</a>
+      <a class="d-flex align-items-center gap-2 text-decoration-none text-dark" href="#home">
+        <span class="fs-3">🎓</span>
+        <div>
+          <div class="fs-5 fw-bold mb-0">Campus Events</div>
+          <small class="text-secondary">College Event Management</small>
+        </div>
+      </a>
       <nav class="d-flex flex-wrap justify-content-center gap-3" aria-label="Primary navigation">
-        <a class="text-secondary text-decoration-none fs-6" href="#home">Home</a>
+        <a class="text-secondary text-decoration-none fs-6" href="index.html">Home</a>
         <a class="text-secondary text-decoration-none fs-6" href="events.html">Events</a>
-        <a class="text-secondary text-decoration-none fs-6" href="#gallery">Gallery</a>
+        <a class="text-secondary text-decoration-none fs-6" href="gallery.html">Gallery</a>
         <a class="text-secondary text-decoration-none fs-6" href="registration.html">Registration</a>
-        <a class="text-secondary text-decoration-none fs-6" href="#contact">Contact</a>
+        <a class="text-secondary text-decoration-none fs-6" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -37,19 +43,30 @@
               <div class="col-12">
                 <div class="card bg-white border rounded-4 p-4 h-100 shadow-sm">
                   <h2 class="h5">Upcoming Events</h2>
-                  <p class="text-secondary mb-0">Explore the calendar and never miss a lecture, fest, or meetup.</p>
+                  <p class="text-secondary mb-2">Weekly lectures, themed fests, workshops, and meetups are scheduled through May.</p>
+                  <ul class="list-unstyled mb-0 text-secondary">
+                    <li>• 12 lectures</li>
+                    <li>• 4 cultural fests</li>
+                    <li>• 3 career meetups</li>
+                  </ul>
                 </div>
               </div>
               <div class="col-12">
                 <div class="card bg-white border rounded-4 p-4 h-100 shadow-sm">
                   <h2 class="h5">Student Registration</h2>
-                  <p class="text-secondary mb-0">Sign up quickly and secure your seat for the events you love.</p>
+                  <p class="text-secondary mb-2">Complete registration in under 2 minutes and reserve your spot in the next activity.</p>
+                  <ul class="list-unstyled mb-0 text-secondary">
+                    <li>• Choose your events</li>
+                    <li>• Submit one form</li>
+                    <li>• Receive confirmation instantly</li>
+                  </ul>
                 </div>
               </div>
               <div class="col-12">
                 <div class="card bg-white border rounded-4 p-4 h-100 shadow-sm">
                   <h2 class="h5">Event Schedule</h2>
-                  <p class="text-secondary mb-0">View details, times, and locations in one easy-to-read schedule.</p>
+                  <p class="text-secondary mb-2">Next up: coding workshop at 10:00 AM, cultural dance practice at 3:00 PM, and guest lecture at 5:30 PM.</p>
+                  <p class="mb-0 text-secondary"><strong>Location:</strong> Main Auditorium, Sports Complex, Tech Lab</p>
                 </div>
               </div>
             </div>
@@ -58,37 +75,206 @@
       </div>
     </section>
 
+    <section class="py-5">
+      <div class="container">
+        <div id="homeCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Students innovating" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5>Innovative Learning</h5>
+                <p>Hands-on workshops and tech competitions for college students.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Campus celebration" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5>Cultural Events</h5>
+                <p>Enjoy music, art, and cultural performances across the campus.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Academic competition" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                <h5>Competitive Events</h5>
+                <p>Quizzes, coding contests, and project expos for ambitious students.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section class="py-5" id="events">
       <div class="container">
-        <h2 class="fw-semibold">Featured Events</h2>
-        <p class="text-muted">Browse student-led events, professional talks, competitions, and social activities.</p>
+        <div class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-4 mb-4">
+          <div>
+            <h2 class="fw-semibold">Featured Events</h2>
+            <p class="text-muted mb-0">Discover our upcoming student events, competitions, and experiential learning opportunities.</p>
+          </div>
+          <a href="events.html" class="btn btn-outline-primary align-self-center">View All Events</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Technical Quiz" />
+              <div class="card-body">
+                <h5 class="card-title">Technical Quiz</h5>
+                <p class="card-text text-secondary">A fast-paced quiz testing technical knowledge across programming, algorithms, and engineering concepts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hackathon" />
+              <div class="card-body">
+                <h5 class="card-title">Hackathon</h5>
+                <p class="card-text text-secondary">Collaborate, build, and present innovative solutions during our 24-hour hackathon challenge.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cultural Fest" />
+              <div class="card-body">
+                <h5 class="card-title">Cultural Fest</h5>
+                <p class="card-text text-secondary">A lively celebration of student art, music, dance, and community traditions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5" id="gallery">
       <div class="container">
-        <h2 class="fw-semibold">Gallery</h2>
-        <p class="text-muted">See highlights from past campus events and celebrations.</p>
+        <div class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-4 mb-4">
+          <div>
+            <h2 class="fw-semibold">Gallery</h2>
+            <p class="text-muted mb-0">Explore memorable moments captured from our most recent events.</p>
+          </div>
+          <a href="gallery.html" class="btn btn-outline-primary align-self-center">Open Gallery</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1498079022511-d15614cb1c02?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Poster Presentation" />
+              <div class="card-body">
+                <h5 class="card-title">Poster Presentation</h5>
+                <p class="card-text text-secondary">Creative displays from student research and innovation projects.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Project Expo" />
+              <div class="card-body">
+                <h5 class="card-title">Project Expo</h5>
+                <p class="card-text text-secondary">A showcase of ambitious student projects and practical demonstrations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581093588401-4c8e0d7374d9?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Coding contest" />
+              <div class="card-body">
+                <h5 class="card-title">Coding Contest</h5>
+                <p class="card-text text-secondary">Competitive programming events designed to sharpen skills and teamwork.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5" id="registration">
       <div class="container">
-        <h2 class="fw-semibold">Registration</h2>
-        <p class="text-muted">Register for upcoming events and manage your participation in one place.</p>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h2 class="fw-semibold">Registration</h2>
+            <p class="text-muted">Register for events with ease and keep track of your upcoming participation from a single page.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item bg-transparent border-top-0 text-secondary">• Enter your Student Name, Roll Number and Branch</li>
+              <li class="list-group-item bg-transparent text-secondary">• Choose from our curated list of technical and cultural events</li>
+              <li class="list-group-item bg-transparent text-secondary">• Receive instant confirmation and next-step instructions</li>
+            </ul>
+            <a href="registration.html" class="btn btn-primary btn-lg">Start Registration</a>
+          </div>
+          <div class="col-lg-5">
+            <div class="card shadow-sm rounded-4 border-0 p-4">
+              <div class="card-body">
+                <h5 class="card-title">Why register?</h5>
+                <p class="card-text text-secondary">Registration ensures your seat, provides event updates, and gives you access to pre-event materials.</p>
+                <div class="d-grid gap-2">
+                  <span class="badge bg-success">Fast confirmation</span>
+                  <span class="badge bg-info text-dark">Easy event selection</span>
+                  <span class="badge bg-warning text-dark">Student-friendly process</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5" id="contact">
       <div class="container">
-        <h2 class="fw-semibold">Contact</h2>
-        <p class="text-muted">Get in touch with the event team for questions, sponsorship, or support.</p>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h2 class="fw-semibold">Contact</h2>
+            <p class="text-muted">Need help with event registration or want more details? Reach out to our event team directly.</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
+                  <h5 class="card-title">Event Coordinator</h5>
+                  <p class="text-secondary mb-1"><strong>Name:</strong> Prof. Anita Sharma</p>
+                  <p class="text-secondary mb-1"><strong>Email:</strong> anita.sharma@college.edu</p>
+                  <p class="text-secondary mb-0"><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm border-0 rounded-4 p-4 h-100">
+                  <h5 class="card-title">Social Channels</h5>
+                  <p class="text-secondary mb-3">Follow updates and event announcements on social platforms.</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Facebook</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Instagram</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-white bg-primary rounded-4 shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Need immediate support?</h5>
+                <p class="card-text">Our event desk is open during college hours. You can also visit the Student Activity Center for in-person assistance.</p>
+                <a href="contact.html" class="btn btn-light">Contact Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="py-4 border-top border-secondary">
-    <div class="container text-center text-muted small">© 2026 College Event Management System</div>
+    <div class="container text-center text-muted small">© 2026 College Event Management System · <a href="faq.html" class="text-decoration-none text-muted">FAQ</a></div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
